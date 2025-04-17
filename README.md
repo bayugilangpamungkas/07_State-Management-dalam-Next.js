@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+**LAPORAN PRAKTIKUM** <br>
 
-## Getting Started
+**=========================** <br>
+**NIM : 244107027020** <br>
+**NAMA : BAYU GILANG PAMUNGKAS** <br>
+**KELAS : TI - 4K RPL** <br>
+**=========================** <br>
 
-First, run the development server:
+**Praktikum 1: React Context untuk State Global Sederhana** <br>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![chrome_M38Hn25ssj](https://github.com/user-attachments/assets/303a18e8-1322-42f8-a764-2a9edf813f41) <br>
+**Praktikum 2: Zustand untuk State Management Kompleks** <br>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![chrome_OXJLFhO2TH](https://github.com/user-attachments/assets/11e35ffc-ca6b-4304-84e5-80d2bf438be3) <br>
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+**Praktikum 3: Redux Toolkit dengan SSR Support** <br>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![chrome_cxwpYwjNC8](https://github.com/user-attachments/assets/ebec03b8-01fb-4f45-aff7-b4757801e322) <br>
 
-## Learn More
+**Praktikum 4: Data Fetching dengan SWR** <br>
 
-To learn more about Next.js, take a look at the following resources:
+![UMWAMNIPsT](https://github.com/user-attachments/assets/f0834d02-e146-4255-89f6-b5dc37f2a372) <br>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Praktikum 5: URL State Management** <br>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+![nZIGkg7FVM](https://github.com/user-attachments/assets/85d97c0f-02b4-4dd2-b599-57294a259d4c) <br>
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Tugas <br>
+1.	Bandingkan performa antara Context API, Zustand, dan Redux <br>
+2.	Diskusikan kapan sebaiknya menggunakan masing-masing solusi <br>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Perbandingan State Management: Context API, Zustand, Redux Toolkit
+## 📊 Tabel Perbandingan
+
+| Fitur               | Context API           | Zustand               | Redux Toolkit         |
+|---------------------|----------------------|----------------------|----------------------|
+| **Ukuran Bundle**   | 🟢 Ringan (bawaan)   | 🟢 Sangat ringan (~1KB) | 🟠 Agak berat (Redux + DevTools) |
+| **Kode Boilerplate** | 🟡 Sedikit (tapi bisa kompleks) | 🟢 Minimal | 🟠 Banyak (diringankan RTK) |
+| **Setup**          | 🟢 Instant (no install) | 🟢 Mudah (`npm install zustand`) | 🟠 Butuh konfigurasi awal |
+| **Performance**    | 🟡 Kurang optimal (re-render) | 🟢 Optimal (selectors) | 🟢 Baik (`useSelector`) |
+| **DevTools**       | 🔴 Tidak ada | 🟡 Plugin eksternal | 🟢 Built-in Redux DevTools |
+| **Learning Curve** | 🟢 Mudah | 🟢 Mudah | 🟠 Sedang-tinggi |
+| **Skalabilitas**   | 🟡 Terbatas | 🟢 Baik | 🟢 Sangat baik |
+
+
+---
+
+## 📌 Panduan Memilih State Management
+
+| Solusi          | Cocok Digunakan Ketika...                                                                 | Tidak Cocok Jika...                                                                 |
+|----------------|----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| **Context API** | 🔸 Butuh state sederhana (tema/bahasa) <br> 🔸 Tidak mau install library tambahan <br> 🔸 Hanya dipakai di 2-3 komponen | 🚫 State sangat sering update <br> 🚫 Aplikasi besar dengan banyak komponen <br> 🚫 Butuh optimasi performa |
+| **Zustand**    | 🔸 Mau solusi praktis "pasang langsung pakai" <br> 🔸 Ingin performa tinggi tanpa ribet <br> 🔸 Proyek kecil-menengah tapi mungkin berkembang | 🚫 Butuh fitur enterprise (Saga/Thunk) <br> 🚫 Harus pakai Redux karena tim sudah terbiasa |
+| **Redux Toolkit** | 🔸 Bangun aplikasi enterprise <br> 🔸 Butuh debugging canggih <br> 🔸 Banyak developer bekerja bersama <br> 🔸 Perlukan middleware (async logic) | 🚫 Proyek kecil yang sederhana <br> 🚫 Mau cepat selesai tanpa setup rumit |
